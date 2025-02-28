@@ -1,0 +1,242 @@
+@font-face {
+  font-family: Amazon;
+  src: url("../src/font/AmazonEmber_Rg.ttf");
+}
+
+* {
+  font-family: "Amazon", Courier, monospace;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "nav2"
+    "contenedor"
+    "recomendaciones"
+    "footer";
+  background-color: #e3e6e6;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #232f3e;
+  color: #ddd;
+  width: 100%;
+  gap: 10px;
+  top: 3399px;
+}
+
+footer b {
+  font-size: 16px;
+}
+
+footer a {
+  font-size: 14px;
+}
+
+footer .column {
+  padding: 18px;
+  gap: 10px;
+}
+
+.containers {
+  grid-area: contenedor;
+  position: absolute;
+  top: 300px;
+  left: 180px;
+}
+
+.cuadricula {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 0.2fr);
+}
+
+.producto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fondo {
+  position: relative;
+  width: 100%;
+  padding-left: 150px;
+  justify-items: center;
+}
+
+.producto-container {
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+}
+
+.panel-identificate {
+  align-items: center;
+  padding: 10px;
+}
+
+.producto.diferentes {
+  display: grid;
+  grid-template-areas:
+    "imagen imagen imagen"
+    "imagen2 imagen3 imagen4";
+  grid-template-columns: repeat(3, 140px);
+}
+
+.imagen-diferente img {
+  padding: 10px;
+  width: 380px;
+}
+
+.imagen {
+  grid-area: imagen;
+}
+
+.imagen-2 {
+  grid-area: imagen2;
+}
+
+.imagen-3 {
+  grid-area: imagen3;
+}
+
+.imagen-4 {
+  grid-area: imagen4;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.productos-linea {
+  width: 1630px;
+  overflow-x: hidden;
+}
+
+.productos-linea:hover {
+  overflow-x: scroll;
+}
+
+.recomendaciones {
+  grid-area: recomendaciones;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-top: 10px;
+  height: 100px;
+  position: relative;
+  margin: 10px;
+  top: 3400px;
+  font-size: 24px;
+  gap: 10px;
+}
+
+.recomendaciones p,
+.recomendaciones a {
+  font-size: 12px;
+}
+
+.recomendaciones button {
+  border: none;
+  width: 300px;
+  height: 31px;
+  padding: 10px;
+}
+
+.recomendaciones a {
+  color: #2162a1;
+  text-decoration: underline;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.recomendaciones hr {
+  width: 100%;
+  background-color: rgb(209, 209, 209);
+  padding: 0.02px;
+}
+
+#identificate {
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 10px 50px;
+}
+
+footer .footer-inicio,
+footer .inicio {
+  background-color: #37475a;
+  width: 100%;
+  text-align: center;
+  height: 39px;
+  align-content: center;
+}
+
+footer img {
+  width: 100px;
+}
+
+footer .opciones {
+  display: flex;
+  align-items: center;
+}
+
+footer .option {
+  display: flex;
+  border: solid grey 1px;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+footer #idioma {
+  width: 15px;
+  padding-right: 4px;
+}
+
+footer.footer-2.flex.column {
+  font-size: 12px;
+  background-color: #131a22;
+}
+
+footer a:hover,
+footer p:hover {
+  text-decoration: underline;
+}
+
+.producto-container,
+.productos-linea {
+  margin-top: 20px;
+}
+
+nav .center {
+  padding: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 6px;
+}
