@@ -1,0 +1,196 @@
+nav {
+  background-color: #131921;
+  color: white;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+nav a {
+  color: white;
+}
+
+nav img.icono {
+  width: 25.2px;
+}
+
+.enviar {
+  font-size: 14px;
+}
+
+.enviar p {
+  font-size: 12px;
+}
+
+img#Logo-Amazon {
+  width: 120px;
+}
+
+.panel-idiomas, .panel-identificate {
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+
+.panel-idiomas {
+  background-color: rgb(255, 246, 246);
+  color: black;
+  flex-direction: column;
+  top: 38px;
+  left: -40px;
+  width: 260px;
+}
+
+.panel-idiomas a {
+  text-decoration: underline;
+  color: #2162a1;
+}
+
+.panel-identificate {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  height: 300px;
+  gap: 20px;
+  top: 60px;
+  width: 600px;
+  left: -180px;
+}
+
+img.carrito {
+  width: 60px;
+}
+
+nav .column:hover,
+img#Logo-Amazon:hover,
+.idiomas-container:hover {
+  border: solid 1px white;
+}
+
+.idiomas-container:hover .panel-idiomas,
+.idiomas-container:hover .flecha-arriba,
+.identificate-container:hover .panel-identificate,
+.identificate-container:hover .flecha-arriba {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #E16119;
+}
+
+.panel-identificate a {
+  color: black;
+}
+
+.flecha-arriba {
+  display: none;
+  left: 40%;
+  position: absolute;
+  top: 80%;
+}
+
+.flecha-arriba img {
+  width: 30px;
+}
+
+.carrito-container {
+  position: relative;
+}
+
+.search:focus-within {
+  border: solid 3px #f08804;
+  border-radius: 10px;
+  height: 37px;
+}
+
+.numero-carrito {
+  bottom: 0;
+  color: #f08804;
+  font-size: 20px;
+  font-weight: 700;
+  left: 35px;
+  position: absolute;
+  top: 20px;
+}
+
+.idiomas-container,
+.identificate-container {
+  gap: 10px;
+  position: relative;
+}
+
+.search input {
+  width: 700px;
+  margin-left: -10px;
+}
+
+select {
+  border-radius: 7px;
+  color: rgba(0, 0, 0, 0.681);
+  height: 37px;
+  padding: 10px;
+  width: 200px;
+}
+
+nav button {
+  background-color: #f3a847;
+  height: 44px;
+  margin-left: -20px;
+}
+
+img#logo-carrito {
+  width: 70px;
+}
+
+nav .center {
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-2 {
+  background-color: #232f3e;
+  justify-content: flex-start;
+  padding-left: 20px;
+  height: 40px;
+}
+
+.navbar-2 img {
+  height: 14px;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 30px;
+}
+
+input[type="text"] {
+  padding: 9px;
+}
+
+.search img {
+  width: 20px;
+}
+
+#image-fondo {
+  width: 1700px;
+  height: 600px;
+}
+
+footer a {
+  color: #ddd;
+}
+
+button {
+  background-color: #ffce12;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 10px;
+}
